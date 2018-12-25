@@ -1,0 +1,415 @@
+/*
+	Primeiros Passos com REACT
+	Projeto Final - MusicPad
+	
+*/
+.Logo {
+	background-image: url('images/notas.jpg');
+	background-size: cover;
+	display: inline-block;
+	height: 60px;
+	width: 90px;
+	vertical-align: middle;
+	margin: 10px;
+}
+
+/*
+	Primeiros Passos com REACT
+	Projeto Final - MusicPad
+	
+	url('../../images/notas.jpg')
+*/
+/*#reset-marginBottom { margin-bottom: 0px; }*/
+.MusForm { color: aliceblue; }
+
+
+.MusForm h3 { color: rgba(140,102,52,0.6); /*#8c6634*/
+	text-shadow: 0.4px 0.4px rgba(214,14,14,1); /*rgba(78, 54, 25, 0.8) rgba(70, 40, 4, 0.8)*/ background-color: rgba(154,205,50,0.08); overflow: hidden; }
+
+
+.MusForm label { color: rgba(86,70,51, 0.7); /*#8c6634 rgba(140,102,52,0.6)*/
+	text-shadow: 1px 1px rgba(250,235,215,0.8); /*rgba(214,14,14,0.8) rgba(78, 54, 25, 0.8) rgba(70, 40, 4, 0.8)*/ font-weight: bold; }
+
+.MusList span {margin-right: 10px; }
+
+.MusForm .submit-style { font-weight: bold; font-size: 16px; background-image: linear-gradient(rgba(250,235,215,0.74), rgba(86,70,51,0.64)); color: aliceblue; width: 60%; height: 30px; border-radius: 20px; display: block; margin: 0 auto; }
+.MusForm .submit-style:active { background-image: radial-gradient(rgba(250,235,215,0.74) 43%, rgba(86,70,51,0.64)); }
+@media only screen and (min-width: ) {
+	.MusForm .submit-style { width: 70%; height: 40px; }
+}
+
+.MusForm input, .MusForm textarea, .MusForm select { font-weight: bold; border-radius: 4px; background-color: rgba(250,235,215,0.4); color: rgba(86,70,51, 1); text-shadow: 1px 1px rgba(250,235,215,1); }
+
+.MusForm input[type="text"] { padding: 8px; width: 50%; font-size: 15px; }
+
+.MusForm select { padding: 6px; width: 40%; font-size: 16px; }
+
+.MusForm textarea {
+	font-size: 17px;
+	padding: 10px; 
+	width: 80%;
+	height: 100px;
+	placeholder: 'Insert your comments here...';
+}
+#labelTextArea { margin-top: 42px; }
+
+.MusForm img { width: 100%; height: 130px; margin-bottom: 35px; border-radius: 80px; }
+
+#imgBasic { display: block; margin: 0 auto; width: 150px; height: 150px; padding-top: 80px; border-radius: 0px; }
+
+.MusForm .areaImg1, .MusForm .areaImg2{ display: none; }
+ 
+
+@media only screen and (min-width: 600px) {
+	.MusForm .areaImg1, .MusForm .areaImg2  { display: inline; width: 100px; height: 100px; } 
+	.MusForm .areaImg1 { padding-top: 15px; }
+	.MusForm .areaImg2  { padding-top: 10px; }
+	.MusForm .areaImg1 {  position: relative; left: 98px;  }
+	.MusForm .areaImg2 { float: right; position: relative; right: 98px; }
+	.MusForm .textarea1	{ width: 40%; float: right; }
+	.MusForm .textarea2	{ width: 40%; /*float: left;*/ }
+}
+@media only screen and (min-width: 920px) {
+	.MusForm img { padding-left: 85px; border-radius: 8px; height: 450px; }
+	.MusForm .areaImg1 { left: 68px; }
+}
+
+
+/*
+	Primeiros Passos com REACT
+	Projeto Final - MusicPad
+	
+	url('../../images/notas.jpg')
+*/
+.MusList { width: 100%; max-width: 960px; }
+@media only screen and (min-width: 980px) {
+	.MusList { /*width: 85%;*/ margin: 0 auto; 
+	#toCol-11-12 { width: 91.6666%; }
+	}
+}
+
+.MusList h3 { color: rgba(140,102,52,0.2); /*#8c6634*/
+	text-shadow: 0.4px 0.4px rgba(214,14,14,0.9); /*rgba(78, 54, 25, 0.8) rgba(70, 40, 4, 0.8)*/ background-color: rgba(154,205,50,0.3); overflow: hidden; }
+
+.MusList h4 { font-size: 20px; color: rgba(86,70,51, 0.7); text-shadow: 1px 1px rgba(250,235,215,0.8); margin-bottom: 0; }
+	
+.MusList label { color: rgba(140,102,52,0.6); /*#8c6634*/
+	text-shadow: 0.4px 0.4px rgba(214,14,14,0.8); /*rgba(78, 54, 25, 0.8) rgba(70, 40, 4, 0.8)*/ font-weight: bold; }
+
+.MusList span {margin-right: 10px; }
+
+.MusList .remove-style, .MusList .sort-style { background-image: linear-gradient(rgba(250,235,215,0.74), rgba(86,70,51,0.64)); color: aliceblue; }
+.MusList .remove-style:active, .MusList .sort-style:active { background-image: radial-gradient(rgba(250,235,215,0.74) 43%, rgba(86,70,51,0.64)); }
+
+.MusList .remove-style { width: 30px; height: 24px; border-radius: 5px; margin-right: 22px; }
+
+.MusList .sort-style { width: 60px; height: 38px; border-radius: 5px; margin-right: 22px; }
+
+.MusList ol {padding-left: 10px; }
+
+.MusList input { border-radius: 4px; background-color: rgba(214, 167, 153, 0.49); }
+
+.MusList input[type="text"] { padding: 8px; width: 50%; }
+
+.MusList .grid { 
+	display: grid; 
+	grid-gap: 2px; 
+	grid-template-columns: 0.2fr 1.4fr 1.4fr;
+	grid-template-rows: auto auto auto;
+}
+
+.MusList .remove { grid-area: 1 / 1 / 3 / 2; position: relative; top: 15px; right: 5px; }
+.MusList .element-1 { grid-area: 1 / 2 / 2 / 3; background-color: rgba(191,191,104,0.29);  padding: 4px 10px 7px 10px; border-radius: 6px; font-size: 18px; }
+.MusList .element-2 { grid-area: 1 / 3 / 2 / 4; background-color: rgba(191,191,104,0.29);  padding: 4px 10px 7px 10px; border-radius: 6px; font-size: 18px; }
+.MusList .element-3 { grid-area: 2 / 2 / 3 / 3; background-color: rgba(191,191,104,0.29);  padding: 4px 10px 7px 10px; border-radius: 6px; font-size: 18px; }
+.MusList .element-4 { grid-area: 2 / 3 / 3 / 4; background-color: rgba(191,191,104,0.29);  padding: 4px 10px 7px 10px; border-radius: 6px; font-size: 18px; }
+.MusList .comments { grid-area: 3 / 1 / 4 / 4;  background-color: rgba(95,158,160,0.29);  padding: 7px 10px 7px 10px; border-radius: 6px; font-size: 18px; }
+.MusList .resources { grid-area: 4 / 1 / 5 / 4; background-color: rgba(95,158,160,0.29);  padding: 7px 10px 7px 10px; border-radius: 6px; font-size: 18px; }
+
+
+/*
+	Primeiros Passos com REACT
+	Projeto Final - MusicPad
+	
+*/
+.RadioForm label { color: rgba(140,102,52,0.6); /*#8c6634*/
+	text-shadow: 0.4px 0.4px rgba(214,14,14,0.8); /*rgba(78, 54, 25, 0.8) rgba(70, 40, 4, 0.8)*/ font-weight: bold; }
+	
+.RadioForm span { display: 'inline-block'; padding-right: 5px; margin-bottom: 0; }
+	
+.RadioForm input {margin-right: 18px;}
+
+.RadioForm .inline { display: 'inline' }
+
+/*
+	Primeiros Passos com REACT
+	Projeto Final - MusicPad
+	
+	
+	-> Em app.css guardamos o estilo com valor global, que será usado em toda a aplicação.
+	
+	-> Hex to RGB
+	https://www.rgbtohex.net/hextorgb/
+	
+	url('../../images/notas.jpg')
+*/
+/***************************
+****************************
+Base Styles
+****************************
+***************************/
+html { background: rgba(144,238,144,0.68); /*lightgreen linen*/ font: 16px Arial; }
+@media only screen and (min-width: 1200px) {
+	/*html { background: radial-gradient(rgba(86,70,51, 0.28),rgba(144,238,144,0.68),rgba(86,70,51, 0.7)); }*/
+}
+
+h2 { color: rgba(86,70,51, 0.7); text-shadow: 1px 1px rgba(250,235,215,0.8); }
+h4 { color: rgba(138,91,30,1); }
+
+hr { max-width: 1073px; }
+
+.inline { display: inline-block; }
+
+.clearfix { content: ""; display: table; clear: both; }
+
+.marginTop1 { margin-top: 30px; }
+.marginTop2 { margin-top: 50px; }
+.marginTop3 { margin-top: 95px; }
+.marginBot1 { margin-bottom: 30px; }
+.marginBot2 { margin-bottom: 50px; }
+.marginBot3 { margin-bottom: 95px; }
+
+.paddingLeft1 { padding-left: 10px; }
+
+#reset-marginBottom { margin-bottom: 0px; }
+
+#backgroundTransparent { background-color: transparent; }
+
+
+.border1 { border: 2px inset rgba(134,108,76, 0.5); padding: 8px; }
+.border2 { border: 2px outset rgba(134,108,76, 0.5); padding: 8px; }
+
+.coluna-vazia { /*do not collapse*/
+	min-height: 1px;
+}
+
+#overflow-hidden { overflow: hidden; }
+
+/***************************
+****************************
+Layout Styles
+****************************
+***************************/
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1170px;
+}
+
+.row {
+	/*margin-right: -15px;
+	margin-left: -15px;*/
+}
+.row:after { content: ""; display: table; clear: both; }
+
+[class*='col-'] {
+	width: 100%;
+	
+	/*padding-left: 15px;
+	padding-right: 15px;*/
+}
+
+@media only screen and (min-width: 920px) {
+	[class*='col-'] { float: left; }
+	.col-1-12 { width: 8.3333%; }
+	.col-1-6 { width: 16.6666%; }
+	.col-1-4 { width: 25%; }
+	.col-1-3 { width: 33.3333%; }
+	.col-1-2 { width: 50%; }
+	.col-2-3 { width: 66.6666%; }
+	.col-3-4 { width: 75%; }
+	.col-10-12 { width: 83.3333%; }
+	.col-11-12 { width: 91.6666%; }
+	.col-1 { width: 100%; }
+}
+
+@media only screen and (min-width: 980px) { 
+	#toCol-11-12 { width: 91.6666%; }
+	}
+}
+
+
+.flex-centered { align-items: center; }
+.flex-justify-between { justify-content: space-between; }
+.flex-justify-around { justify-content: space-around; }
+.flex-container { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: wrap; }
+
+
+/***************************
+****************************
+Generic Modules Styles
+****************************
+***************************/
+footer { 
+	color: white; /*#524561 #6c5980 #524561*/ font-weight: bold; text-align: center; padding-top: 30px; padding-bottom: 30px; 
+	/*footer p, footer small { text-shadow: 1px 1px #abaaa4; }*/ 
+	height: 640px; 
+	border-radius: 10px; 
+}
+	
+footer  .row:first-of-type { padding-bottom: 20px; }
+/*footer .row:last-of-type { padding-top: 30px; border-top: 1px solid white; }*/
+.flex-footer1 [col*='col-'] { float: none; }
+.flex-footer1 .col-1-6 { width: 16.6666%; }
+.flex-footer1 .col-1-4 { width: 25%; }
+.flex-footer1 .col-1-3 { width: 33.3333%; }
+
+.footer-primary {
+  color: #b1a786; font-weight: bold; text-shadow: 0.4px 0.4px #e6e8e1;
+}
+
+.footer-secondary { color: #334a5f; text-shadow: 1px 1px #dedbbf; }
+
+.footer-pad-top { padding-top: 10px; }
+
+.footer-logo { font-size: 2.1em; }
+
+.footer p { padding: 10px; font-weight: bold; }
+.footer .logotipo {color: rgba(140,102,52,0.9); }
+
+.background-footer-primary, .background-header-primary  { background-color: rgba(7,74,76,0.65); /*rgba(7, 74, 76, 1)-#074a4c*/ }
+.background-footer-secondary, .background-header-secondary { 
+background-color: rgba(14, 8, 8, 0.53);
+/*rgba(250,235,215,0.2)-antiquewhite*/
+}
+
+.header small {
+	color: rgba(134,108,76, 0.5);
+	text-shadow: 1px 1px rgba(250,235,215,0.2);
+}
+
+.header {  
+	color: rgba(140,102,52,0.6); /*#8c6634*/
+	text-shadow: 0.4px 0.4px rgba(214,14,14,0.8);
+	
+	height: 280px; 
+	width: 100%; 
+	border-radius: 10px; 
+	margin-bottom: 40px;
+}
+.header h1, .header h2, .footer h1, .footer h2 {   
+	text-align: center;
+}
+.header h1, .footer h1, {   
+	vertical-align: middle;
+}
+.header h2, .footer h2 {   
+	margin-top: 5px; 
+	font-size: 1.6em;
+	color: rgba(140,102,52,0.9);
+}
+
+@media only screen and (min-width: 545px) {
+	.header { height: 160px; }
+	footer { height: 590px; }
+	.header h1 { display: inline-block; }
+}
+@media only screen and (min-width: 635px) {
+	footer { height: 570px; }
+}
+@media only screen and (min-width: 920px) {
+	footer { height: 330px; }
+	.flex-footer2 { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: wrap; }
+}
+@media only screen and (min-width: 1150px) {
+	footer { height: 280px; }
+}
+
+img { display: block; margin: 0 auto; }
+
+.imgMasked { background: linear-gradient(to top, rgba(39, 41, 41, 0.01), rgba(250,235,215,0.4) 30%); }
+.imgMasked.bg-image > img { opacity: 0.2; }
+
+/*Background Modules*/
+.bg-image { width: 100%; height: 380px; overflow: hidden; position: relative; border-radius: 10px; }
+.bg-image img { position: absolute; top: -9999px; bottom: -9999px; right: -9999px; left: -9999px; margin: auto; min-width: 100%; height: 380px; }
+@media only screen and (max-width: 380px) {
+	.bg-image { height: 440px; }
+	.bg-image img { height: 440px; }
+}
+@media only screen and (min-width: 800px) {
+	.bg-image { width: 95%; margin: 20px auto; } 
+}
+@media only screen and (min-width: 920px) {
+	.bg-image { width: 100%; height: 300px; }
+	.bg-image img { height: 300px; }
+}
+
+/*Social Modules*/
+.social ul { list-style: none; padding: 0px; margin: 0px 25px; }
+.social li { display: inline-block; }
+.social	a { color: #334a5f; text-shadow: 1px 1px #eae7ca; text-decoration: none; }
+	
+/*Navigation Modules*/
+.nav { overflow: hidden; }
+.nav > ul { 
+			/* It would be better practice to create a .nav-list module.*/
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}	
+.nav-pad {
+	padding-top: 35px; padding-bottom: 35px; 
+}
+
+/*Button Modules*/
+.btn {
+			/*most basic set of rules for bnt elements: mobile version*/
+	display: inline-block;
+	text-align: center;
+	
+		/*Sequences of whitespace will collapse into a single whitespace. Text will never wrap to the next line. The text continues on the same line until a <br> tag is encountered*/
+	white-space: nowrap;
+	vertical-align: middle;
+	background-image: none;
+	border: 1px solid transparent;
+	cursor: pointer;
+	
+	/*Atenção: estas quatro regras abaixo são específicas para o layout mobile*/
+	padding: 12px 30px;
+	font-size: 1.313em;
+	font-weight: bold;
+	border-radius: 4px;
+	text-decoration: none;
+	
+	/*Aplicando o efeito de transição*/
+	transition: all 0.3s ease 0s;
+}
+@media only screen and (min-width: ) {
+	.btn { font-size: 1.1313em; }
+}
+
+.btn-primary {
+	color: rgba(32, 17, 49, 0.8); /*roxo-médio-dark-.8 roxo-insaturado-lightPlus-#5f5767 verm-insaturado-médio-#6d5151 */
+  border-color: #516b51;
+  Background-color: #516b51; /*azul-insaturadoMinus-médio-#a2a4a7*/ 
+}
+.btn-primary:hover {
+	color: rgba(32, 17, 49, 1); /*roxo-médio-dark-.8 */
+	background: none;
+	/*border-color: white;*/
+	text-decoration: none;
+}
+.btn-secondary {
+	color: black; /*#ffffff*/ background: transparent; border: 1px solid #fff;  
+}
+.btn-secondary:hover {
+	color: rgba(32, 17, 49, 0.8); /*roxo-médio-dark-.6*/ background-color: rgba(255,255,255,0.5); border: 1px solid rgba(255,255,255,0.5);
+}
+@media only screen and (min-width: 48em) {
+	.btn-primary, .btn-secondary {
+		padding: 10px 15px;
+	}
+}

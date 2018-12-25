@@ -1,0 +1,15 @@
+/*
+	Primeiros Passos com REACT
+	Projeto Final - MusicPad
+	
+*/
+.Logo {
+	background-image: url('../../images/notas.jpg');
+	background-size: cover;
+	display: inline-block;
+	height: 60px;
+	width: 90px;
+	vertical-align: middle;
+	margin: 10px;
+}
+

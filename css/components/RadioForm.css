@@ -1,0 +1,14 @@
+/*
+	Primeiros Passos com REACT
+	Projeto Final - MusicPad
+	
+*/
+.RadioForm label { color: rgba(140,102,52,0.6); /*#8c6634*/
+	text-shadow: 0.4px 0.4px rgba(214,14,14,0.8); /*rgba(78, 54, 25, 0.8) rgba(70, 40, 4, 0.8)*/ font-weight: bold; }
+	
+.RadioForm span { display: 'inline-block'; padding-right: 5px; margin-bottom: 0; }
+	
+.RadioForm input {margin-right: 18px;}
+
+.RadioForm .inline { display: 'inline' }
+

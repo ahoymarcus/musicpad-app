@@ -1,0 +1,23 @@
+1. Carmina Burnana
+	- Carl Orff
+	- 1936
+	- erudito
+	- Carmina Burana is a manuscript written in 1230 by two different scribes in an early gothic minuscule...(Wikipedia)
+	- https://www.youtube.com/watch?v=hKS7fkhnJiQ&t=868s
+	
+2. Aquarela do Brasil 
+	- Ary Barroso
+	- 1984
+	- samba
+	- Pertencente ao gênero "samba-exaltação", "Aquarela do Brasil" é a mais conhecida. 
+	- https://youtu.be/UAS3X7XCCTs
+
+3. When Doves Cry 
+	- Prince
+	- 1984
+	- rock and roll
+	- Esta música está incluída nas 500 canções que formaram o rock and roll do Rock and Roll Hall of Fame...(Wikipedia)
+	- https://www.youtube.com/watch?v=UG3VcCAlUgE&list=RDWNQ87jGCTGU&index=2
+
+ 
+const testeData = [{title: 'Testou1x', author: 'Zilphin', year: '2015', style: 'erudito', comments: 'Muitíssimo bom...', resources: 'teste1@teste.com'},{title: 'Testo2x', author: 'Bill', year: '1980', style: 'alternativo', comments: 'Kikikiki', resources: 'teste2@teste.com'},{title: 'Teste3x', author: 'Zeca', year: '1999', style: 'latino', comments: 'Legal', resources: 'teste3@teste.com'},{title: 'Testa4x', author: 'Tico', year: '1985', style: 'rock\'n roll', comments: 'Oii', resources: 'teste4@teste.com'},{title: 'Testando5x', author: 'Teco', year: '2000', style: 'samba', comments: 'Haha', resources: 'teste5@teste.com'}];
