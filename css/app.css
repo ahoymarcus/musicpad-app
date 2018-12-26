@@ -167,6 +167,7 @@ background-color: rgba(14, 8, 8, 0.53);
 	font-size: 1.6em;
 	color: rgba(140,102,52,0.9);
 }
+.footer .logo:visited { color: rgba(165, 42, 42, 0.6); }
 
 @media only screen and (min-width: 545px) {
 	.header { height: 160px; }
