@@ -314,10 +314,10 @@ background-color: rgba(14, 8, 8, 0.53);
 
 @media only screen and (min-width: 545px) {
 	.header { height: 160px; }
-	footer { height: 590px; }
+	footer { height: 610px; }
 	.header h1 { display: inline-block; }
 }
-@media only screen and (min-width: 635px) {
+@media only screen and (min-width: 871px) {
 	footer { height: 570px; }
 }
 @media only screen and (min-width: 920px) {
